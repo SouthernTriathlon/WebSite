@@ -1,0 +1,9 @@
+body {
+  padding: 5px;
+}
+body menu {
+  padding: 0;
+}
+body caption {
+  caption-side: top;
+}

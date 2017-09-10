@@ -1,0 +1,302 @@
+[
+    {
+        "index": 1,
+        "title": "Sunbelt Bakery",
+        "website": "http://www.sunbeltsnacks.com/",
+        "logo": "sunbelt.png",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 3
+    },
+    {
+        "index": 2,
+        "title": "Cohutta Springs Conference Center",
+        "website": "http://www.cohuttasprings.com/",
+        "logo": "cohutta.png",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 2
+    },
+    {
+        "index": 3,
+        "title": "Morning Pointe",
+        "website": "http://www.morningpointe.com/",
+        "logo": "morningpointe.png",
+        "phone": "877-776-4688",
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 4,
+        "title": "East Ridge Bicycles",
+        "website": "http://eastridgebicycles.net/",
+        "logo": "eastridgebicycles.png",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 5,
+        "title": "Green Briar Cove",
+        "website": "http://www.seegreenbriarcove.com/",
+        "logo": "greenbriarcove.png",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 6,
+        "title": "Fertility Center",
+        "website": "http://myfertilitycenter.com/",
+        "logo": "fertility.jpg",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 7,
+        "title": "SoftTouch Theraputic Massage",
+        "website": "http://softtouchtherapeuticmassage.com/",
+        "logo": "softtouch.png",
+        "phone": "423-314-7512",
+        "contact": "April Nelson",
+        "width": 2,
+        "height": 1
+    },
+    {
+        "index": 8,
+        "title": "Collegedale Credit Union",
+        "website": "http://www.collegedale.org/",
+        "logo": "collegedalecreditunion.png",
+        "phone": null,
+        "contact": null,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "index": 9,
+        "title": "Adventist Book Center",
+        "website": "http://www.adventistbookcenter.com/",
+        "logo": "abc.png",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 10,
+        "title": "Collegedale Gentle Dental",
+        "website": "http://www.reason2smile.com/",
+        "logo": null,
+        "phone": "423-396-4222",
+        "contact": "Joseph Chung, D.D.S.",
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 11,
+        "title": "Hoven Collision Repair, LLC",
+        "website": "http://hovencollision.com/",
+        "logo": "hoven.png",
+        "phone": "423-238-6334",
+        "contact": null,
+        "width": 3,
+        "height": 2
+    },
+    {
+        "index": 12,
+        "title": "Center of Comprehensive Medicine",
+        "website": "http://centerforcompmedicine.com/",
+        "logo": "centerforcomprehensivemedicine.jpg",
+        "phone": "423-396-0382",
+        "contact": "Carlton Vollberg, D.O.",
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 13,
+        "title": "Southern Oaks Assisted Living",
+        "website": "http://southernoaks.us/",
+        "logo": "southernoaks.png",
+        "phone": "423-499-8500",
+        "contact": "Jonna Davis",
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 14,
+        "title": "McElroy Trucking",
+        "website": "http://www.mcelroytrucklines.com/",
+        "logo": "mcelroy.png",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 15,
+        "title": "David L. Campbell, D.D.S.",
+        "website": null,
+        "logo": null,
+        "phone": "423-396-3712",
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 16,
+        "title": "High Point",
+        "website": "http://www.highpointclimbing.com/",
+        "logo": "highpoint.png",
+        "phone": null,
+        "contact": null,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "index": 17,
+        "title": "ABC Supply Co., inc.",
+        "website": "http://www.abcsupply.com/branch/043",
+        "logo": "abcinc.png",
+        "phone": null,
+        "contact": null,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "index": 18,
+        "title": "BenchMark Physical Therapy",
+        "website": "http://www.benchmarkpt.com/",
+        "logo": "benchmark.jpg",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 19,
+        "title": "Rhodes Climate Controlled Storage",
+        "website": "http://rhodesstorage.com/",
+        "logo": "rhodes.png",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 20,
+        "title": "Don Self Insurance Agency",
+        "website": "http://www.donself.net/",
+        "logo": "donself.png",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 21,
+        "title": "Cohutta Springs Youth Camp",
+        "website": "http://www.cs-yc.com/",
+        "logo": "cohuttaspringsyouthcamp.png",
+        "phone": null,
+        "contact": null,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "index": 22,
+        "title": "Southern Girls Club",
+        "website": null,
+        "logo": "girlsclub.png",
+        "phone": null,
+        "contact": null,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "index": 23,
+        "title": "Camp Kulaqua",
+        "website": "http://www.campkulaqua.com/",
+        "logo": "campkulaqua.png",
+        "phone": null,
+        "contact": null,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "index": 24,
+        "title": "Southern Mens Club",
+        "website": null,
+        "logo": "mensclub.png",
+        "phone": null,
+        "contact": null,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "index": 25,
+        "title": "Southern Campus Shop",
+        "website": "https://www.saucampusshop.com/",
+        "logo": "campusshop.png",
+        "phone": null,
+        "contact": null,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "index": 26,
+        "title": "Village Market",
+        "website": "http://vm.southern.edu/",
+        "logo": "vm.png",
+        "phone": null,
+        "contact": null,
+        "width": 2,
+        "height": 2
+    },
+    {
+        "index": 27,
+        "title": "Incor Design & Promotions",
+        "website": "http://www.incordesign.com/",
+        "logo": "incordesign.png",
+        "phone": null,
+        "contact": null,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "index": 28,
+        "title": "School of Physical Education Health and Wellness",
+        "website": "http://pe.southern.edu/",
+        "logo": "saupe.png",
+        "phone": null,
+        "contact": null,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "index": 29,
+        "title": "Service Department",
+        "website": "http://www.southern.edu/",
+        "logo": "sauservice.png",
+        "phone": null,
+        "contact": null,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "index": 30,
+        "title": "Vego Bistro",
+        "website": "http://www.vegobistro.com/",
+        "logo": "vegobistro.png",
+        "phone": "404-692-1044",
+        "contact": "David Esterline",
+        "width": 3,
+        "height": 1
+    }
+]

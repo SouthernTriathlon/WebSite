@@ -1,0 +1,113 @@
+{
+    "headers": [
+        "directions",
+        "protocols",
+        "course"
+    ],
+    "directions": {
+        "address": [
+            "Cohutta Springs Conference Center",
+            "1175 Cohutta Springs Road",
+            "Crandall, Georgia 30711",
+            "1-800-940-6789"
+        ],
+        "iframe": "https://maps.google.com/maps?q=34.890069,-84.726126&num=1&t=m&ie=UTF8&ll=34.886142,-84.738321&spn=0.024572,0.036564&z=14&output=embed",
+        "sections": [
+            {
+                "title": "From Atlanta, GA",
+                "detail": "Follow I-75 North to US HWY 411 (Carterville Exit). Take US HWY 411 North through Chatsworth, Eton, and Crandall, GA. Look for Cohutta Springs Road approximately 4 miles North of Eton. Turn right. Follow Cohutta Springs Road, crossing railroad tracks, until you come to Cohutta Springs entrance on the left."
+            },
+            {
+                "title": "From Chattanooga, TN",
+                "detail": "Follow I-75 South and take the GA State HWY 2 East Exit at Ringgold. Take HWY 2 East to intersection of GA State HWY 2 and GA State HWY 225. Continue straight on connector highway (Halls Chapel Road) to US HWY 411. Turn South (Right). Travel one mile to Cohutta Springs Road. Turn left. Follow Cohutta Springs Road, crossing railroad tracks, until you come to Cohutta Springs entrance on left."
+            },
+            {
+                "title": "From East TN",
+                "detail": "Take US HWY 411 approximately 7 miles South of the Georgia/Tennessee state line to Cohutta Springs Road. Turn left onto Cohutta Springs Road crossing the railroad tracks. Follow Cohutta Springs Road until you come to Cohutta Springs entrance on left."
+            }
+        ]
+    },
+    "protocols": {
+        "sections": [
+            {
+                "title": "Packet Pickup and Orientation",
+                "details": [
+                    "Packet pick-up and body marking is between 10:30 am and 11:45 am on the day of the race.",
+                    "Orientation (pre-race instructions) is at 11:45 am and required for all participants. Please gather near the swim / race start.",
+                    "You should be fully registered and checked in before the orientation.",
+                    "The race starts at 12:30 pm with Wave 1. More information about the waves will be published after online registration closes; on or about midnight the Thursday before the event."
+                ]
+            },
+            {
+                "title": "Timing Chip and Bib",
+                "details": [
+                    "Wear the timing chip on your left ankle with the chip facing out to your left. Do not carry it in hand or put it on wrist!",
+                    "Make sure your Bib Number is always easily visible in front of you.",
+                    "Make sure your Bib Number is clearly marked on your swim cap.",
+                    "Make sure your Bib Number is attaced to the seat post of your bike and aimed towards to rear of the bike so that the number is clearly visible from either side of the bike."
+                ]
+            },
+            {
+                "title": "Transition Area",
+                "details": [
+                    "After the swim, participants will run to enter the North end of the transition area, and run down the East side of the transition area to the row where your bike is racked.",
+                    "Exit from bike rack will be toward west side of transition area. Walk bike in transition area.",
+                    "Exit on West side and go to South end of transition area to the bike exit/entrance.",
+                    "After completing the bike, re-enter the South end entrance/exit. Walk bike in the transition area down the East side of the transition area to the row where you racked your bike.",
+                    "Exit for run on the West side of the transition area and run to the North end exit.",
+                    "At the North end exit you will turn left and begin the run down the track behind the transition area."
+                ]
+            },
+            {
+                "title": "Relay",
+                "details": [
+                    "Relay bikes are to be parked at the South end of the transition area.",
+                    "Bike and run relay participants are to wait at relay exchange area.All chip exchanges will be done at the relay exchange area.",
+                    "The swimmer will exchange the chip with the biker who will then go to where the bike is racked.",
+                    "After completing the bike ride, the biker will rack the bike and then go to the relay exchange area to exchange the chip with the runner.",
+                    "Relay participants will follow the same protocol as the individual participants for entering and exiting the transition area."
+                ]
+            },
+            {
+                "title": "Swim ½ Mile",
+                "details": [
+                    "Swim line up will be in waves.",
+                    "For assistance from swim marshals, hold your fist high in the air.",
+                    "Swim caps are provided and are required.",
+                    "Wet suits are permitted.",
+                    "Swim counterclockwise, the buoys should pass by on your left shoulder.",
+                    "If you quit during the swim and are rescued and taken to shore, you must walk directly back to the swim start area and return your chip to the swim director immediately.The swim director is Bob Benge and he will be the starter for the race."
+                ]
+            },
+            {
+                "title": "Bike 18 Miles",
+                "details": [
+                    "The roads are open to traffic, so yield to traffic.",
+                    "Slow down when making a turn.",
+                    "No drafting.",
+                    "You must wear a helmet with chinstrap securely fastened that meets safety standards during the bike portion of the event."
+                ]
+            },
+            {
+                "title": "Run 4 Miles",
+                "details": [
+                    "Participants must run or walk the entire portion of the run course.",
+                    "The runner must wear the bib number pinned on their shirt or shorts or strapped on waist line.",
+                    "Make sure your bib number is in front, especially at the finish line.Failure to do so may cause your race time to be inaccurate."
+                ]
+            },
+            {
+                "title": "Finish Chute",
+                "details": [
+                    "Line up in a single file line in the order that you crossed the finish line.",
+                    "Allow the race official to collect your timing chip.",
+                    "Move out of the chute once your timing chip has been removed."
+                ]
+            }
+        ]
+    },
+    "course": {
+        "text": "Swim ½ Mile, Bike 18 Miles, Run 4 Miles",
+        "map": "assets/images/triathlon_map.jpg"
+    }
+}

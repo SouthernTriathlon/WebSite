@@ -1,0 +1,14 @@
+<div class="card float-left text-center">
+    <div *ngIf="sponsor.logo" [style.width.px]="3 * this.singleBlockSize" [style.height.px]="sponsor.height * this.singleBlockSize">
+        <img class="card-img-top" [src]="'assets/logos/' + sponsor.logo" [style.width.px]="sponsor.width * this.singleBlockSize"
+        />
+    </div>
+    <div class="card-body">
+        <h4 class="card-title" *ngIf="!sponsor.logo">{{sponsor.title}}</h4>
+        <div class="card-text">
+            <div *ngIf="sponsor.contact">{{sponsor.contact}}</div>
+            <div *ngIf="sponsor.phone">{{sponsor.phone}}</div>
+        </div>
+        <a [href]="sponsor.website" *ngIf="sponsor.website">{{sponsor.website}}</a>
+    </div>
+</div>

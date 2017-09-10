@@ -1,0 +1,35 @@
+<article *ngFor="let header of information.headers">
+    <a id="event/{{header}}" class="anchor"></a>
+    <h3>
+        {{header[0].toUpperCase()}}{{header.substring(1)}}
+        <!--
+        <span *ngIf="header === 'directions'">Directions</span>
+        <a href="#directions" *ngIf="header !== 'directions'">Directions</a> |
+        <span *ngIf="header === 'protocols'">Protocols</span>
+        <a href="#directions" *ngIf="header !== 'protocols'">Protocols</a> |
+        <span *ngIf="header === 'course'">Course</span>
+        <a href="#directions" *ngIf="header !== 'course'">Course</a>
+        -->
+    </h3>
+    <section *ngIf="information[header].iframe">
+        <address>
+            <div *ngFor="let address of information[header].address">
+                {{address}}
+            </div>
+        </address>
+        <div class="google-map">
+            <iframe [src]="sceResource(information[header].iframe)"></iframe>
+        </div>
+    </section>
+    <section *ngFor="let section of information[header].sections">
+        <strong>{{section.title}}</strong>
+        <p *ngIf="section.detail">{{section.detail}}</p>
+        <ol *ngIf="section.details">
+            <li *ngFor="let detail of section.details">{{detail}}</li>
+        </ol>
+    </section>
+    <section *ngIf="information[header].map">
+        <p>{{information[header].text}}</p>
+        <img [src]="information[header].map">
+    </section>
+</article>
