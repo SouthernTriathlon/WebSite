@@ -7,7 +7,8 @@ import 'rxjs/add/operator/switchMap';
 
 @Component({
     selector: 'results',
-    templateUrl: 'results.component.html'
+    templateUrl: 'results.component.html',
+    styleUrls: ['results.component.css']
 })
 
 export class ResultsComponent implements OnInit {

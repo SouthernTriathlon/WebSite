@@ -11,7 +11,7 @@
         <a href="#directions" *ngIf="header !== 'course'">Course</a>
         -->
     </h3>
-    <section *ngIf="information[header].iframe">
+    <section class="address-map" *ngIf="information[header].iframe">
         <address>
             <div *ngFor="let address of information[header].address">
                 {{address}}

@@ -4,7 +4,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
     selector: 'event-info',
-    templateUrl: 'event-info.component.html'
+    templateUrl: 'event-info.component.html',
+    styleUrls: ['event-info.component.css']
 })
 
 export class EventInfoComponent {

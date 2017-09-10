@@ -53,7 +53,7 @@
         <table class="table table-stripped">
             <ng-container *ngFor="let ageGroup of ageGroups; let i = index">
                 <ng-container *ngFor="let result of results[ageGroup]; let j = index">
-                    <thead *ngIf="(j === 0 && filter(result)) || (i === 0 && j === 0 && category === 'O')">
+                    <thead class="bg-primary" *ngIf="(j === 0 && filter(result)) || (i === 0 && j === 0 && category === 'O')">
                         <tr *ngIf="category !== 'O'">
                             <th colspan="13">{{ageGroup.substring(3)}}</th>
                         </tr>

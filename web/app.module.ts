@@ -10,6 +10,7 @@ import { EventInfoComponent } from './event-info/event-info.component';
 import { ResultsComponent } from './results/results.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
+import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { RateChartComponent } from './rate-chart/rate-chart.component';
 
@@ -49,6 +50,7 @@ var routes = RouterModule.forRoot([
     ResultsComponent,
     SponsorsComponent,
     SponsorComponent,
+    FooterComponent,
     MenuComponent,
     RateChartComponent
   ],
