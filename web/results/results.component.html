@@ -1,106 +1,125 @@
 <article>
-    <h3>Results</h3>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="btn-group" dropdown>
-                        <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-                                {{year}} <span class="caret"></span>
-                            </button>
-                        <ul *dropdownMenu class="dropdown-menu" role="menu">
-                            <li role="menuitem" *ngFor="let y of years">
-                                <a class="dropdown-item" routerLink="/results/{{y}}/category/{{category}}/group/{{group}}" (click)="getResults(y)">{{y}}</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn-group" dropdown>
-                        <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-                            {{groupLabel}} <span class="caret"></span>
-                        </button>
-                        <ul *dropdownMenu class="dropdown-menu" role="menu">
-                            <li class="dropdown-header">Individual Male</li>
-                            <li role="menuitem">
-                                <a class="dropdown-item" routerLink="/results/{{year}}/category/A/group/M">Age Group</a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-item" routerLink="/results/{{year}}/category/O/group/M">Overall</a>
-                            </li>
-                            <li class="dropdown-header">Individual Female</li>
-                            <li role="menuitem">
-                                <a class="dropdown-item" routerLink="/results/{{year}}/category/A/group/F">Age Group</a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-item" routerLink="/results/{{year}}/category/O/group/F">Overall</a>
-                            </li>
-                            <li class="dropdown-header">Relay</li>
-                            <li role="menuitem">
-                                <a class="dropdown-item" routerLink="/results/{{year}}/category/R/group/M">Male</a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-item" routerLink="/results/{{year}}/category/R/group/F">Female</a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-item" routerLink="/results/{{year}}/category/R/group/X">Mixed</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <table class="table table-stripped">
-            <ng-container *ngFor="let ageGroup of ageGroups; let i = index">
-                <ng-container *ngFor="let result of results[ageGroup]; let j = index">
-                    <thead class="bg-primary" *ngIf="(j === 0 && filter(result)) || (i === 0 && j === 0 && category === 'O')">
-                        <tr *ngIf="category !== 'O'">
-                            <th colspan="13">{{ageGroup.substring(3)}}</th>
-                        </tr>
-                        <tr *ngIf="category === 'O'">
-                            <th colspan="13">{{groupLabel}}</th>
-                        </tr>
-                        <tr>
-                            <th>Place</th>
-                            <th>Bib</th>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Rank</th>
-                            <th>Swim</th>
-                            <th>T1</th>
-                            <th>Rank</th>
-                            <th>Bike</th>
-                            <th>T2</th>
-                            <th>Rank</th>
-                            <th>Run</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody *ngIf="filter(result)">
-                        <tr>
-                            <td *ngIf="category === 'O'">{{result.overallRank}}</td>
-                            <td *ngIf="category !== 'O'">{{result.ageGroupRank}}</td>
-                            <td>{{result.bibNumber}}</td>
-                            <td>{{result.name}}</td>
-                            <td>{{result.age}}</td>
-                            <td>{{result.swimRank}}</td>
-                            <td *ngIf="result.swimTime">{{result.swimTime | date:'m:ss'}}</td>
-                            <td *ngIf="!result.swimTime"></td>
-                            <td *ngIf="result.T1">{{result.T1 | date:'m:ss'}}</td>
-                            <td *ngIf="!result.T1"></td>
-                            <td>{{result.bikeRank}}</td>
-                            <td *ngIf="result.bikeTime">{{result.bikeTime | date:'m:ss'}}</td>
-                            <td *ngIf="!result.bikeTime"></td>
-                            <td *ngIf="result.T2">{{result.T2 | date:'m:ss'}}</td>
-                            <td *ngIf="!result.T2"></td>
-                            <td>{{result.runRank}}</td>
-                            <td *ngIf="result.runTime">{{result.runTime | date:'m:ss'}}</td>
-                            <td *ngIf="!result.runTime"></td>
-                            <td>{{result.total | date:'H:mm:ss'}}</td>
-                        </tr>
-                    </tbody>
-                </ng-container>
-            </ng-container>
-        </table>
-    </section>
+	<h3>Results</h3>
+	<section>
+		<p class="alert-info" style="padding: 10px; border-radius: 4px;">
+			2016 and 2017 Results provided by
+			<a href="http://sceniccitymultisportllc.com/">Scenic City Multisport</a>.
+			<br>
+			<small>
+				Please submit
+				<a href="http://sunbeltcohuttaspringstriathlon.itsyourrace.com/Correction.aspx?id=6556">corrections request</a>
+				via the timing companies website.
+			</small>
+			<br>
+			<a class="btn btn-link" href="http://sunbeltcohuttaspringstriathlon.itsyourrace.com/results.aspx?id=6556&amp;y=2017">2017 Individual and Relay Results</a>
+			<br>
+			<a class="btn btn-link" href="http://sunbeltcohuttaspringstriathlon.itsyourrace.com/results.aspx?id=6556&amp;y=2016">2016 Individual Awards</a>
+			<a class="btn btn-link" href="https://www.southerntriathlon.com/#/2016_relay_results">2016 Relay Team Awards</a>
+		</p>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="btn-group" dropdown>
+						<button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+							{{year}}
+							<span class="caret"></span>
+						</button>
+						<ul *dropdownMenu class="dropdown-menu" role="menu">
+							<li role="menuitem" *ngFor="let y of years">
+								<a class="dropdown-item" routerLink="/results/{{y}}/category/{{category}}/group/{{group}}" (click)="getResults(y)">{{y}}</a>
+							</li>
+						</ul>
+					</div>
+					<div class="btn-group" dropdown>
+						<button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+							{{groupLabel}}
+							<span class="caret"></span>
+						</button>
+						<ul *dropdownMenu class="dropdown-menu" role="menu">
+							<li class="dropdown-header">Individual Male</li>
+							<li role="menuitem">
+								<a class="dropdown-item" routerLink="/results/{{year}}/category/A/group/M">Age Group</a>
+							</li>
+							<li role="menuitem">
+								<a class="dropdown-item" routerLink="/results/{{year}}/category/O/group/M">Overall</a>
+							</li>
+							<li class="dropdown-header">Individual Female</li>
+							<li role="menuitem">
+								<a class="dropdown-item" routerLink="/results/{{year}}/category/A/group/F">Age Group</a>
+							</li>
+							<li role="menuitem">
+								<a class="dropdown-item" routerLink="/results/{{year}}/category/O/group/F">Overall</a>
+							</li>
+							<li class="dropdown-header">Relay</li>
+							<li role="menuitem">
+								<a class="dropdown-item" routerLink="/results/{{year}}/category/R/group/M">Male</a>
+							</li>
+							<li role="menuitem">
+								<a class="dropdown-item" routerLink="/results/{{year}}/category/R/group/F">Female</a>
+							</li>
+							<li role="menuitem">
+								<a class="dropdown-item" routerLink="/results/{{year}}/category/R/group/X">Mixed</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<table class="table table-stripped">
+			<ng-container *ngFor="let ageGroup of ageGroups; let i = index">
+				<ng-container *ngFor="let result of results[ageGroup]; let j = index">
+					<thead class="bg-primary" *ngIf="(j === 0 && filter(result)) || (i === 0 && j === 0 && category === 'O')">
+						<tr *ngIf="category !== 'O'">
+							<th colspan="13">{{ageGroup.substring(3)}}</th>
+						</tr>
+						<tr *ngIf="category === 'O'">
+							<th colspan="13">{{groupLabel}}</th>
+						</tr>
+						<tr>
+							<th>Place</th>
+							<th>Bib</th>
+							<th>Name</th>
+							<th>Age</th>
+							<th>Rank</th>
+							<th>Swim</th>
+							<th>T1</th>
+							<th>Rank</th>
+							<th>Bike</th>
+							<th>T2</th>
+							<th>Rank</th>
+							<th>Run</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody *ngIf="filter(result)">
+						<tr>
+							<td *ngIf="category === 'O'">{{result.overallRank}}</td>
+							<td *ngIf="category !== 'O'">{{result.ageGroupRank}}</td>
+							<td>{{result.bibNumber}}</td>
+							<td>{{result.name}}</td>
+							<td>{{result.age}}</td>
+							<td>{{result.swimRank}}</td>
+							<td *ngIf="result.swimTime">{{result.swimTime | date:'m:ss'}}</td>
+							<td *ngIf="!result.swimTime"></td>
+							<td *ngIf="result.T1">{{result.T1 | date:'m:ss'}}</td>
+							<td *ngIf="!result.T1"></td>
+							<td>{{result.bikeRank}}</td>
+							<td *ngIf="result.bikeTime">{{result.bikeTime | date:'m:ss'}}</td>
+							<td *ngIf="!result.bikeTime"></td>
+							<td *ngIf="result.T2">{{result.T2 | date:'m:ss'}}</td>
+							<td *ngIf="!result.T2"></td>
+							<td>{{result.runRank}}</td>
+							<td *ngIf="result.runTime">{{result.runTime | date:'m:ss'}}</td>
+							<td *ngIf="!result.runTime"></td>
+							<td>{{result.total | date:'H:mm:ss'}}</td>
+						</tr>
+					</tbody>
+				</ng-container>
+			</ng-container>
+		</table>
+	</section>
 </article>
